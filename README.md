@@ -27,6 +27,30 @@ Final held-out test results:
 
 The strongest entity category was **SpecificDisease**, with approximately **85% recall** and an **F1-score of 0.64**.
 
+### Final Model Evaluation
+
+The final model was evaluated on the held-out test set using entity-level precision, recall, and F1-score.
+
+![Final BioBERT Model Evaluation](screenshots/model_evaluation.png)
+
+### Healthcare Entity Distribution
+
+Exploratory data analysis revealed a substantial class imbalance across the four healthcare entity categories.
+
+![Healthcare Entity Distribution](screenshots/entity_distribution.png)
+
+### Training and Validation
+
+BioBERT was fine-tuned for three epochs. The final training and validation results are shown below.
+
+![BioBERT Training Results](screenshots/training_results.png)
+
+### Human-in-the-Loop Demonstration
+
+A confidence-based review mechanism was added to flag uncertain healthcare entity predictions for human review.
+
+![Human-in-the-Loop Healthcare AI](screenshots/human_review_demo.png)
+
 ## Technology Stack
 
 - Python
