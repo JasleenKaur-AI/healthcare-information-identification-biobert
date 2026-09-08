@@ -64,6 +64,13 @@ High-confidence predictions can be accepted, while lower-confidence predictions 
 
 The confidence threshold used in the project demonstration is experimental and is not a clinically validated threshold.
 
+## References
+
+- NCBI Disease Research Abstracts dataset (prepared dataset used in this project):  
+  https://storage.googleapis.com/cloud-samples-data/language/ucaip_ten_dataset.jsonl
+
+- Course textbook chapter: *Building AI Model for Healthcare Information Identification* — referenced for the original problem context.
+
 ## Disclaimer
 
 This project is an educational and research prototype. It is not intended for clinical diagnosis, treatment decisions, or other medical decision-making.
