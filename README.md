@@ -88,6 +88,37 @@ High-confidence predictions can be accepted, while lower-confidence predictions 
 
 The confidence threshold used in the project demonstration is experimental and is not a clinically validated threshold.
 
+## Project Workflow
+
+The project was developed as an end-to-end biomedical Named Entity Recognition pipeline:
+
+1. **Dataset Acquisition**  
+   Loaded the prepared NCBI Disease Research Abstracts dataset containing annotated biomedical text.
+
+2. **Exploratory Data Analysis**  
+   Examined the healthcare entity categories and identified significant class imbalance in the dataset.
+
+3. **Data Preparation**  
+   Converted character-level entity annotations into BIO labels for token classification.
+
+4. **Biomedical Tokenization**  
+   Used the BioBERT tokenizer to convert biomedical text into model-compatible tokens.
+
+5. **Long Document Processing**  
+   Applied overlapping chunking to process abstracts exceeding BioBERT's 512-token input limit.
+
+6. **BioBERT Fine-Tuning**  
+   Fine-tuned `dmis-lab/biobert-base-cased-v1.1` for healthcare Named Entity Recognition using PyTorch and Hugging Face Transformers.
+
+7. **Model Evaluation**  
+   Evaluated the trained model using entity-level Precision, Recall, and F1-score.
+
+8. **Confidence-Based Prediction**  
+   Generated entity predictions together with model confidence scores.
+
+9. **Human-in-the-Loop Review**  
+   Added an experimental confidence threshold that flags uncertain predictions for human review instead of automatically accepting them.
+
 ## References
 
 - NCBI Disease Research Abstracts dataset (prepared dataset used in this project):  
