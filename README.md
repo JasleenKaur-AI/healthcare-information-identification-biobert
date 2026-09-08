@@ -124,7 +124,7 @@ The project was developed as an end-to-end biomedical Named Entity Recognition p
 - NCBI Disease Research Abstracts dataset (prepared dataset used in this project):  
   https://storage.googleapis.com/cloud-samples-data/language/ucaip_ten_dataset.jsonl
 
-- Course textbook chapter: *Building AI Model for Healthcare Information Identification* - referenced for the original problem context.
+- Course textbook chapter: *Building AI Model for Healthcare Information Identification* - referenced for the original problem context and dataset selection.
 
 ## Disclaimer
 
